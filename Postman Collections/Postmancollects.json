@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "a400d28b-60e7-4c69-a0b5-d9390e8654f8",
+		"name": "Wallet API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/wallet/withdrawal",
+			"id": "b277a7c5-6bd8-4ec0-b6ef-2de9b9a45ac5",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"amount\": 1,\n  \"institutionCode\": \"string\",\n  \"settlementBankCode\": \"string\",\n  \"accountNumber\": \"string\",\n  \"currencyCode\": \"string\"\n}\n"
+				},
+				"url": "{{url}}/wallet/withdrawal"
+			},
+			"response": [
+				{
+					"id": "832ce2ea-f600-4a44-908a-4e3f1788e150",
+					"name": "Default",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"amount\": 1,\n  \"institutionCode\": \"string\",\n  \"settlementBankCode\": \"string\",\n  \"accountNumber\": \"string\",\n  \"currencyCode\": \"string\"\n}\n"
+						},
+						"url": "{{url}}/wallet/withdrawal"
+					},
+					"code": 200,
+					"_postman_previewlanguage": "Text",
+					"header": [],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n  \"message\": \"Wallet liquidation request is successful\",\n  \"status\": true\n}\n"
+				}
+			]
+		}
+	]
+}
